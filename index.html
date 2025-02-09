@@ -1,0 +1,51 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="payment-info-modal">
+            <h1>Enter Payment Details</h1>
+            <form id="payment-form">
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+                <input type="number" placeholder="Enter Card Number" required>
+                <input type="text" placeholder="Enter CVV" required>
+                <button type="submit" id="pay">Pay</button>
+            </form>
+            
+        </div>
+        <main id="main">
+            <div class="top-banner">
+                <img id="top-img" src="./images/burger.jpg">
+                <div class="title">
+                    <h1>Jimmy’s Diner</h1>
+                    <p>The best burgers and pizzas in town.</p>
+                </div>
+            </div>
+            
+            <section class="menu-items-container" id="menu-items-container">
+            </section>
+            <section id="basket">
+                <h2>Your Order</h2>
+                <div id="total-basket">
+                </div>
+                <hr>
+                <div id="total-summary">
+                    <h2>Total Price:</h2>
+                    <h3 id="total-basket-price"></h3>
+                </div>
+                <div class="complete-order-btn-container">
+                    <button id="complete-order">Complete Order</button>
+                </div>
+                
+            </section>
+            
+        </main>
+        
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

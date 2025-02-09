@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    width: 100vw; /* Full viewport width */
+    height: auto;
+    aspect-ratio: 1160 / 600; /* Maintain aspect ratio */
+    font-family: "smythe";
+    font-weight: 200;
+    position: absolute;
+}
+
+#top-img {
+    width: 600px;
+    height: 170px;
+    object-fit: cover; /* Görüntüyü bozmadan sığdır */
+    object-position: center; /* Ortadan kırp */
+    position: absolute;
+}
+
+.title > h1{
+    margin: 0px;
+    font-size: 2.25rem;
+}
+
+.title > p{
+    margin-top: 5px;
+}
+
+.title{
+    top: 50px;
+    font-size: 1.1rem;
+    left: 46px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.menu-items-container{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menu-item h2{
+    font-size: 80px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.price-desc-button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vh;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.price-desc-button-container p{
+    color: #8B8B8B;
+}
+
+.menu-item button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1.5px solid #DEDEDE;
+}
+
+#basket{
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: none;
+}
+
+#basket h2{
+    text-align: center;
+}
+
+.basket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-removebtn-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.title-removebtn-container button {
+    border: none;
+    color: #8B8B8B;
+    background-color: white;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px 0px 1px 0px;
+}
+
+.title-removebtn-container h3 {
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+}
+
+#basket hr {
+    height: 2px;
+    color: black;
+}
+
+#total-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.complete-order-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#complete-order{
+    width: 100vw; /* Full viewport width */
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    background-color: #16DB99;
+    color: white;
+    font-size: bold;
+    aspect-ratio: 1160 / 600;
+}
+
+#payment-info-modal {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 360px;
+    background-color: white;
+    position: fixed;  /* Use fixed position to place it relative to the viewport */
+    top: 50%;         /* Vertically center the modal */
+    left: 50%;        /* Horizontally center the modal */
+    transform: translate(-50%, -50%);  
+    z-index: 1000;    
+    box-shadow: 0px 0px 110px 10px black;
+}
+
+#payment-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#payment-form input{
+    margin-bottom: 25px;
+    width: 250px;
+    height: 35px;
+    
+}
+
+#payment-form input{
+    margin-bottom: 25px;
+    width: 250px;
+    height: 35px;
+    
+}
+
+#payment-form button{
+    width: 250px;
+    height: 35px;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#thanks-message{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECFDF5;
+    height: 120px;
+    font-size: 1.5rem;
+    color: #065F46;
+}
